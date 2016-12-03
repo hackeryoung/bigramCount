@@ -1,9 +1,15 @@
+echo "Building Spark Docker Image..."
 docker build .
 
-./start-master.sh
-./start-worker.sh 
+echo "Initializing Master Node..."
+sh start-master.sh
 
-docker cp text.txt spark_master:/root/
-docker cp bigramCount.py spark_master:/root/
+sleep 3
+echo "Initializing Worker Node..."
+sh start-worker.sh
 
+echo "Running BigramCount..."
 docker exec -d spark_master sh -c "cd /root/src; /root/src/run.sh"
+
+sleep 30
+echo "BigramCount finishes"

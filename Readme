@@ -1,14 +1,14 @@
 Execution
  - Simply run the starter script `run.sh`
- - Results are stored in `results.txt` after the program completes
+ - Results are stored in `src/results.txt` after the program completes
 
 
 File Descriptions
-Dockerfile - for building Spark Docker image
-/scripts - for initializing working components in Spark cluster
-/src
-  bigramCount.py - the bigramCount program
-  text.txt - testing data
-  run.sh - start the program
-start-master.sh - a wrapper script to start a Master node container
-start-worker.sh - a wrapper script to start a Worker node container
+- Dockerfile: configuration file for building Spark Docker image
+- scripts: directory that stores scripts for initializing working components in Spark cluster
+- src
+  - bigramCount.py: the bigramCount program
+  - text.txt: testing data
+  - run.sh: start the program
+- start-master.sh: a wrapper script to start a Master node container
+- start-worker.sh: a wrapper script to start a Worker node container
