@@ -1,0 +1,1 @@
+/usr/local/spark/bin/spark-submit bigramCount.py

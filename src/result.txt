@@ -1,0 +1,3 @@
+the total number of bigrams: 214196
+the most common bigram: "of the"
+the number of bigrams required to add up to 10% of all bigrams: 127
